@@ -1,6 +1,6 @@
 {
   "name": "file_version",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "i一个简单的版本号替换包",
   "main": "index.js",
   "scripts": {
