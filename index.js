@@ -31,7 +31,8 @@ AssetsReplaceVersion.prototype = {
 		var self = this;
 
 		compiler.plugin('done', function() {
-			// console.log('start AssetsReplaceVersion'); 
+			
+			console.log('change file version: '); 
 
       var VER = self.options.filename; // the version file
       var DIR = self.options.includePath; // need to change
@@ -56,9 +57,9 @@ AssetsReplaceVersion.prototype = {
             });
             // console.log(data);
             fio.writeFile(file, data).then(function(data) {
-              console.log('file: ' + file + ' write succ: ',data);
+              console.log(' file: ' + file + ' succ');
             }, function(err) {
-              console.log('file: ' + file + 'write err: ', err);
+              console.log(' file: ' + file + ' err: ', err);
             });
           }, function(err) {
             conosle.log(err);
