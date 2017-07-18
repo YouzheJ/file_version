@@ -1,0 +1,27 @@
+{
+  "name": "file_version",
+  "version": "1.0.0",
+  "description": "i一个简单的版本号替换包",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YouzheJ/file_version.git"
+  },
+  "keywords": [
+    "file",
+    "version"
+  ],
+  "author": "youzhej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YouzheJ/file_version/issues"
+  },
+  "homepage": "https://github.com/YouzheJ/file_version#readme",
+  "dependencies": {
+    "file_io": "^1.0.0",
+    "lodash": "^4.17.4"
+  }
+}
