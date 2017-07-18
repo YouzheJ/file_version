@@ -17,7 +17,7 @@
 
 ```bash
 npm install assets-webpack-plugin --save-dev
-npm install file-version --save-dev
+npm install file_version --save-dev
 ```
 
 - 配置 webpack.config.js
