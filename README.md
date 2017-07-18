@@ -1,6 +1,9 @@
 ﻿### 一个简单的版本替换npm包
+
 ---
+
 #### 使用场景
+
 ```
 
 在jsp等页面中需要对引入的文件进行版本控制
@@ -10,7 +13,9 @@
 ### 注意：此包需要搭配 assests-webpack-plugin 结合使用
 
 ### 具体使用流程（一个简单的例子）
+
 - 安装
+
 ```
 
 npm install assets-webpack-plugin --save-dev
@@ -19,6 +24,7 @@ npm install file-version --save-dev
 ```
 
 - 配置 webpack.config.js
+
 ```
 
 // 加载依赖
@@ -26,6 +32,7 @@ var AssetsPlugin = require('assets-webpack-plugin');
 var AssetsReplaceVersion = require('file_version');
 
 ```
+
 ```
 
 // 配置plugins
@@ -48,14 +55,18 @@ plugins: [
 ]
 
 ```
+
 - jsp
+
 ```
 
 // 在jsp中引入带有版本信息的html片段
 <%@ include file="public/include/header.html" %>
 
 ```
+
 - header.html
+
 ```
 
 // 待替换的目标文件
@@ -64,7 +75,9 @@ plugins: [
 <link rel="stylesheet" type="text/css" href="static/css/style.css?v=b02348e10dd02f729e9c">
 
 ```
+
 - assets.js
+
 ```
 
 // 由 assets-webpack-plugin 生成
