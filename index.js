@@ -31,8 +31,6 @@ AssetsReplaceVersion.prototype = {
 		var self = this;
 
 		compiler.plugin('done', function() {
-			
-			console.log('change file version: '); 
 
       var VER = self.options.filename; // the version file
       var DIR = self.options.includePath; // need to change
@@ -46,6 +44,9 @@ AssetsReplaceVersion.prototype = {
         // console.log(tmp, arr);
 
         // change include file
+	
+	console.log('change file version: '); 
+	
         var files = fs.readdirSync(DIR);
         // console.log(files);
         files.forEach(url => {
