@@ -32,9 +32,11 @@ function filterString(rule, path) { // 根据字符串过滤
 
 function filterArray(rule, path) { // 根据数组过滤
   for(var i = 0; i < rule.length; i++) {
-    var reg = new RegExp(rule[i]);
-    if(reg.test(path)) {
-      return true;
+    if(rule[i] && getType(rule[i]) === 'String') {
+      var reg = new RegExp(rule[i]);
+      if(reg.test(path)) {
+        return true;
+      }
     }
   }
   return false;
