@@ -42,8 +42,13 @@ plugins: [
       }
     }),
     new AssetsReplaceVersion({
-      filename: 'public/asset.js',
-      includePath: 'public/include' // 请确保include中没有文件夹，否则读取失败
+      filename: 'public/asset.js',   // 必选项
+      includePath: 'public/include', // 必选项 请确保include中没有文件夹，否则读取失败
+      // filter: 'public',              
+      /* 可选项 过滤规则
+                可以是字符串或者数组
+                可以是路径或文件名(请确保与文件中的一致)
+      */
     })
     ...
 ]
